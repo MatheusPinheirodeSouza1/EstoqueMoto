@@ -24,4 +24,4 @@ insert into OS(nome,telefone1,telefone2,email,placa,chassi,id_venda) values(1,1,
 
 select * from estoque;
 
-alter table venda modify data datetime(2)
+alter table venda modify data datetime(2);

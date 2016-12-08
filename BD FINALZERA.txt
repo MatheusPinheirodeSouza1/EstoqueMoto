@@ -11,7 +11,7 @@ create table OS(Id integer not null auto_increment primary key,nome char(40),tel
 alter table venda modify data datetime(3);
 
 alter table venda 
-Add Foreign Key (id_os) References estoque(Id);
+Add Foreign Key (id_Prod) References estoque(Id);
 
 alter table OS 
 Add Foreign Key (id_venda) References venda(Id);

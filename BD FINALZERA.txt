@@ -6,7 +6,7 @@ create table venda(Id integer not null auto_increment primary key,id_Prod intege
 
 create table vendas(Id integer not null auto_increment primary key,id_Prod integer not null,id_venda integer not null);
 
-create table OS(Id integer not null auto_increment primary key,nome char(40),telefone1 char(40),telefone2 char (40),email char (40),placa char(40),chassi char(40),id_venda integer,endereço char (140), descricao char (250));
+create table OS(Id integer not null auto_increment primary key,nome char(40),telefone1 char(40),telefone2 char (40),email char (40),placa char(40),chassi char(40),id_venda integer,endereÃ§o char (140), descricao char (250));
 
 alter table venda modify data datetime(3);
 
@@ -25,3 +25,5 @@ insert into venda(id_Prod,quantidade,data) values (1,1,'97_01_19');
 insert into OS(nome,telefone1,telefone2,email,placa,chassi,id_venda) values(1,1,1,1,1,1,1);
 
 select * from estoque;
+
+alter table venda modify data datetime(2);

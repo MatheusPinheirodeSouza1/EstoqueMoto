@@ -4,7 +4,7 @@ create table estoque(Id integer not null auto_increment primary key,nome char(40
 
 create table venda(Id integer not null auto_increment primary key,id_Prod integer not null, quantidade integer not null, data datetime,total double);
 
-create table vendas(Id integer not null auto_increment primary key,id_Prod integer not null,id_venda integer not null);
+create table vendas(Id integer not null auto_increment primary key,id_os integer not null,id_venda integer not null);
 
 create table OS(Id integer not null auto_increment primary key,nome char(40),telefone1 char(40),telefone2 char (40),email char (40),placa char(40),chassi char(40),id_venda integer,endereço char (140), descricao char (250));
 
